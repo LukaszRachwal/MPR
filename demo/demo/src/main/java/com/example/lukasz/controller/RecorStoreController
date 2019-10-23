@@ -1,0 +1,27 @@
+package com.example.lukasz.controller;
+
+import com.example.lukasz.model.record;
+import com.example.lukasz.service.RecordStoreService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+
+@RequestMapping("/recordstore")
+@RestController
+public class RecordStoreController {
+    private final RecordStoreService recordStoreServiceService;
+
+    public RecordStoreControllerontroller(RecordStoreService recordStoreService) {
+        this.recordStoreService = recordStoreService;
+    }
+
+    @GetMapping
+    public List<Book> getRecordStoreService() {
+        return recordStoreService.findAl();
+    }
+
+
+}

@@ -1,0 +1,50 @@
+package com.example.lukasz.model;
+
+public class Record {
+    private long id;
+    private String title;
+    private String performer;
+    private double price;
+
+    public Record(){
+    }
+
+    public Book(long id, String title, String performer,double price) {
+        this.id = id;
+        this.title = title;
+        this.performer = performer;
+        this.price = price;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getPerformer() {
+        return performer;
+    }
+
+    public void setPerformer(String performer) {
+        this.performer = performer;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
